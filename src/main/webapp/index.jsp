@@ -1,2 +1,2 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<div>123</div>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<div>Action OK!</div>
