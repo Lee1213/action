@@ -21,7 +21,7 @@ public class ExceptionController {
     @Autowired
     private ExceptionService exceptionService;
 
-    @RequestMapping(value = "normal")
+    @RequestMapping(value = "/normal")
     public Map<String, Object> getNormal() {
         Map<String, Object> result = exceptionService.getResult();
         return result;
