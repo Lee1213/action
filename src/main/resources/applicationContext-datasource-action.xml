@@ -51,7 +51,7 @@
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-        <property name="basePackage" value="cn.dolphin.campaigns.mapper"/>
+        <property name="basePackage" value="cn.dolphin.action.mapper"/>
     </bean>
 
 </beans>
