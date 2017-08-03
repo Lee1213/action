@@ -26,7 +26,7 @@ public class ActionController {
         List list = Lists.newArrayList();
         list.add("123");
 
-        actionService.getActions();
+        actionService.getAction();
 
         return list;
     }

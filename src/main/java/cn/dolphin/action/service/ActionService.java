@@ -1,5 +1,8 @@
 package cn.dolphin.action.service;
 
+import cn.dolphin.action.domain.Action;
+import cn.dolphin.action.mapper.ActionMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,7 +11,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class ActionService {
 
-    public void getActions() {
+    @Autowired
+    private ActionMapper actionMapper;
 
+    public Action getAction() {
+        Action action = actionMapper.getAction();
+        return action;
     }
 }
