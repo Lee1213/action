@@ -22,7 +22,7 @@ public class ActionController {
     private ActionService actionService;
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public List<String> action() {
+    public List<String> action() throws Exception {
         List list = Lists.newArrayList();
         list.add("123");
 

@@ -11,4 +11,8 @@ import cn.dolphin.action.domain.Action;
 public interface ActionMapper {
 
     Action getAction();
+
+    void updateAction1();
+
+    void updateAction2();
 }
