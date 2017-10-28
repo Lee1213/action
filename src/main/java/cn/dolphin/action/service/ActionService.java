@@ -17,19 +17,24 @@ public class ActionService {
     private ActionMapper actionMapper;
 
     @Transactional
-    public Action getAction() throws Exception {
-        getAct();
+    public Action getAction() {
+        // Thread.sleep(1000 * 10);
 
-        Thread.sleep(1000 * 10);
+        Action action = new Action();
+        action.setActionName("INSERT");
+        action.setStatus("SUCCESS");
+        actionMapper.insertSelective(action);
 
-//        int a = 1 / 0;
-        actionMapper.updateAction2();
+        updateAction(1);
 
-        return null;
+        return action;
     }
 
     @Transactional(propagation = Propagation.REQUIRES_NEW)
-    public void getAct() {
-        actionMapper.updateAction1();
+    public void updateAction(Integer id) {
+        Action updateAction = new Action();
+        updateAction.setActionName("UPDATE");
+        updateAction.setStatus("SUCCESS");
+        actionMapper.updateByPrimaryKey(updateAction);
     }
 }

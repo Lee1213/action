@@ -21,7 +21,7 @@ public class ActionController {
     @Autowired
     private ActionService actionService;
 
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/action", method = RequestMethod.GET)
     public List<String> action() throws Exception {
         List list = Lists.newArrayList();
         list.add("123");
