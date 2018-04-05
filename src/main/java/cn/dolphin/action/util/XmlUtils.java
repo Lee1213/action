@@ -1,7 +1,7 @@
 package cn.dolphin.action.util;
 
-import cn.dolphin.action.xml.XmlRequestBo;
-import cn.dolphin.action.xml.XmlResponseBo;
+import cn.dolphin.action.bo.XmlRequestBo;
+import cn.dolphin.action.bo.XmlResponseBo;
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
